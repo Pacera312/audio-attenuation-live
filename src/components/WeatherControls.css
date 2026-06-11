@@ -14,6 +14,119 @@
   margin-bottom: 10px;
 }
 
+/* API Section */
+.weather-api-section {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-title {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #2a5298;
+  margin: 0 0 5px 0;
+}
+
+.search-group {
+  display: flex;
+  gap: 8px;
+}
+
+.location-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #2a5298;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #1e3c72;
+  background: white;
+}
+
+.location-input:focus {
+  outline: none;
+  border-color: #1e3c72;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+}
+
+.location-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-search {
+  background: #2a5298;
+  color: white;
+  min-width: 50px;
+}
+
+.btn-search:hover:not(:disabled) {
+  background: #1e3c72;
+  box-shadow: 0 2px 8px rgba(42, 82, 152, 0.3);
+}
+
+.btn-geo {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 100%;
+}
+
+.btn-geo:hover:not(:disabled) {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+}
+
+.error-message {
+  background: #fee;
+  border-left: 4px solid #f44;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #c33;
+}
+
+.success-message {
+  background: #efe;
+  border-left: 4px solid #4a4;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #3a3;
+}
+
+.divider {
+  text-align: center;
+  color: #999;
+  font-size: 0.8em;
+  margin: 10px 0;
+}
+
+/* Manual section */
+.manual-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .control-group {
   display: flex;
   flex-direction: column;
